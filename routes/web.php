@@ -19,7 +19,7 @@ Route::get('', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/user/{id}', [UserController::class, 'show']);
+Route::resource('user', UserController::class);
 
 Route::fallback(function() {
     return redirect()->route('home');

@@ -23,7 +23,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return "Create User function called";
     }
 
     /**
@@ -43,7 +43,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public static function show($id)
+    public function show($id)
     {
         echo "Id is $id";
     }
