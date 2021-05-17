@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('', function () {
     return view('welcome');
+})->name('home');
+
+Route::fallback(function() {
+    return redirect()->route('home');
 });
