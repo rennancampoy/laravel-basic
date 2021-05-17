@@ -11,6 +11,4 @@
 
 Simple project developed for PHP and Laravel studies purpose.
 
--
-
 Rennan Eduardo Campoy
