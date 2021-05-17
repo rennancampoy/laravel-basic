@@ -20,7 +20,10 @@ Route::get('', function () {
 })->name('home');
 
 Route::resource('user', UserController::class);
+Route::get('/user/{id}/details', [UserController::class, 'details']);
 
 Route::fallback(function() {
     return redirect()->route('home');
 });
+
+

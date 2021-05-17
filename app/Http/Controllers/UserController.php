@@ -81,4 +81,9 @@ class UserController extends Controller
     {
         //
     }
+
+    public function details($id)
+    {
+        return view('userDetails', compact( 'id'));
+    }
 }
